@@ -1,0 +1,154 @@
+<% provide(:title, 'Home') %>
+<header id="homeHeader">
+  <div class="container">
+    <span class="fa fa-cubes" aria-hidden="true"></span>
+    <h1> WORKSHOP </h1>
+    <a href="#home" class="page-scroll">
+    <span class="hvr-pulse-shrink glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+    </a>
+  </div>
+</header>
+<section id="home">
+  <div class="container-fluid text-center">
+    <div class="row">
+      <h1 class="text-center">Services</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+      <div data-wow-delay="0.4s" data-wow-duration="2s" class="wow fadeIn col-md-3">
+        <span class="fa fa-diamond text-center" aria-hidden="true"></span>
+        <h3>QUALITY</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Delectus at a blanditiis optio doloribus dolore dicta autem quod 
+        dignissimos deserunt dolores recusandae nihil, 
+        ratione accusamus quia, earum minima, magni amet!</p>
+      </div>
+      <div data-wow-delay="0.8s" data-wow-duration="2s" class="wow fadeIn col-md-3">
+        <span class="fa fa-certificate" aria-hidden="true"></span>
+        <h3>CERTIFIED</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Delectus at a blanditiis optio doloribus dolore dicta autem quod 
+        dignissimos deserunt dolores recusandae nihil, 
+        ratione accusamus quia, earum minima, magni amet!</p>
+      </div>
+      <div data-wow-delay="1.2s" data-wow-duration="2s" class="wow fadeIn col-md-3">
+        <span class="fa fa-tree" aria-hidden="true"></span>
+        <h3>GREEN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Delectus at a blanditiis optio doloribus dolore dicta autem quod 
+        dignissimos deserunt dolores recusandae nihil, 
+        ratione accusamus quia, earum minima, magni amet!</p>
+      </div>
+      <div data-wow-delay="1.6s" data-wow-duration="2s" class="wow fadeIn col-md-3">
+        <span class="fa fa-balance-scale" aria-hidden="true"></span>
+        <h3>WARRANTY</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Delectus at a blanditiis optio doloribus dolore dicta autem quod 
+        dignissimos deserunt dolores recusandae nihil, 
+        ratione accusamus quia, earum minima, magni amet!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="homeContact">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="homeBG">
+        <div class="col-md-10 col-md-offset-1">
+          <div data-wow-delay="0.2s" data-wow-duration="2s" class="wow fadeIn homeText">
+            <h3> Interested to work with us?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Modi unde vitae placeat dignissimos, laudantium tempora, 
+            quia aliquid quidem pariatur debitis deleniti exercitationem commodi blanditiis temporibus tenetur, 
+            obcaecati suscipit amet velit.</p>
+            <%= link_to 'Contact Us!', new_contact_path, class: 'btn btn-large btn-danger', method: :get %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="project">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Our Projects</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+        <div class="row bg2">
+          <div class="project">
+            <div>
+            <span data-wow-delay="0.2s" data-wow-duration="2s" class="wow fadeIn proTitle">
+            <h1>Motorbike Parts</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eum, ex atque recusandae placeat, nam accusamus eaque ut ea praesentium dolores, temporibus expedita.
+             Et dolorem iusto magni dolorum, pariatur officiis maxime.</p>
+             
+             <%= link_to 'Read More', product_path, class: 'btn btn-large btn-danger', method: :get %>
+             
+            </span>
+            <%= image_tag("car1.jpg", height: '750px') %>
+            </div>
+            <div>
+            <span class="proTitle">
+            <h1 class="projectSlideanim">Car Parts</h1>
+            <p class="projectSlideanim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eum, ex atque recusandae placeat, nam accusamus eaque ut ea praesentium dolores, temporibus expedita.
+             Et dolorem iusto magni dolorum, pariatur officiis maxime.</p>
+
+             <%= link_to 'Read More', product_path, class: 'btn btn-large btn-danger projectSlideanim', method: :get %>
+
+            </span>
+            <%= image_tag("car0.jpg", height: '750px') %>
+            </div>
+            <div>
+            <span class="proTitle">
+            <h1 class="projectSlideanim">Airplane Parts</h1>
+            <p class="projectSlideanim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eum, ex atque recusandae placeat, nam accusamus eaque ut ea praesentium dolores, temporibus expedita.
+             Et dolorem iusto magni dolorum, pariatur officiis maxime.</p>
+
+             <%= link_to 'Read More', product_path, class: 'btn btn-large btn-danger projectSlideanim', method: :get %>
+
+            </span>
+            <%= image_tag("car2.jpg", height: '750px') %>
+            </div>
+            <div>
+            <span class="proTitle">
+            <h1 class="projectSlideanim">Ship Parts</h1>
+            <p class="projectSlideanim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eum, ex atque recusandae placeat, nam accusamus eaque ut ea praesentium dolores, temporibus expedita.
+             Et dolorem iusto magni dolorum, pariatur officiis maxime.</p>
+
+             <%= link_to 'Read More', product_path, class: 'btn btn-large btn-danger projectSlideanim', method: :get %>
+
+            </span>
+            <%= image_tag("car3.jpg", height: '750px') %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sponsor">
+  <div class="container-fluid">  
+    <div class="row bg3">
+      <div class="sponsor-header">
+        <h3> Sponsors: </h3>
+      </div>
+      <div class="sponsor-body">
+        <div><i class="fa fa-angellist" aria-hidden="true"></i></div>
+        <div><i class="fa fa-amazon" aria-hidden="true"></i></div>
+        <div><i class="fa fa-chrome" aria-hidden="true"></i></div>
+        <div><i class="fa fa-gg" aria-hidden="true"></i></div>
+        <div><i class="fa fa-cc-diners-club" aria-hidden="true"></i></div>
+        <div><i class="fa fa-skyatlas" aria-hidden="true"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+wow = new WOW({offset: 50})
+wow.init();
+</script>

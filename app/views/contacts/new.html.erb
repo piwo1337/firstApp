@@ -1,0 +1,76 @@
+<h1>Contacts#new</h1>
+<p>Find me in app/views/contacts/new.html.erb</p>
+<% provide(:title, 'Contact') %>
+<header id="contactHeader">
+  <div class="container">
+    <h1>Contact Us!</h1>
+  </div>
+</header>
+
+<section id="contact">
+  <div class="container contactForm">
+    <div class="contact">
+        <%= form_for @contact do |f| %>
+          <% flash.each do |type, msg| %>
+            <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+          <% end %>
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :comments, 'Message' %>
+            <%= f.text_area :comments, class: 'form-control' %>
+          </div>
+          <%= f.submit 'Submit', class: 'btn btn-danger btn-block' %>
+        <% end %>
+    </div>
+  </div>
+</section>
+<section id="moreInfo">
+  <div class="container-fluid">
+    <h1 class="text-center">INFO</h1>
+    <p class="text-center">Contact us and we'll get back to you within 24 hours.</p>
+    <div class="row infoRow">
+      <div class="col-md-8">
+        <div class="googleMap">
+          <div id="map" style='height: 400px;'>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <ul class="infoText">
+          <li>
+            <i class="glyphicon glyphicon-map-marker"></i>
+            WORKSHOP<br>Random Street Name<br>Maribor, SI
+          </li>
+          <li>
+            <i class="glyphicon glyphicon-phone"></i> +386 123456789
+          </li>
+          <li>
+          <i class="glyphicon glyphicon-envelope"></i> example@example.com 
+          </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: { Zoom: 15 }, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 46.5547617,
+        "lng": 15.6456283
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+    handler.getMap().setZoom(15);
+  });
+</script>

@@ -1,0 +1,172 @@
+<% provide(:title, 'Products') %>
+<header id="productHeader">
+  <div class="container">
+    <h1>Products</h1>
+  </div>
+</header>
+
+<section id="products">
+  <div class="container productList">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="product text-center">
+          <button class="filter btn btn-default" data-filter="all">All</button>
+          <button class="filter btn btn-default" data-filter=".bike">Motorbike Parts</button>
+          <button class="filter btn btn-default" data-filter=".car">Car Parts</button>
+          <button class="filter btn btn-default" data-filter=".airplane">Airplane Parts</button>
+          <button class="filter btn btn-default" data-filter=".ship">Ship Parts</button>
+
+          <div class="product-grid" id="MixItUpBCE8F4">
+            <div class="product-item mix bike">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption class="cap-fig">
+                  <h4>Motorbike</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix ship">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption class="cap-fig"> 
+                  <h4>Ship</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix airplane">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption class="cap-fig">
+                  <h4>Airplane</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix bike">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption       class="cap-fig">
+                  <h4>Motorbike</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix ship">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption      class="cap-fig">
+                  <h4>Ship</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix car">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption     class="cap-fig">
+                  <h4>Car</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix airplane">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption    class="cap-fig">
+                  <h4>Airplane</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix car">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption   class="cap-fig">
+                  <h4>Car</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix airplane">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption  class="cap-fig">
+                  <h4>Airplane</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+             <div class="product-item mix bike">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption class="cap-fig">
+                  <h4>Motorbike</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix car">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption class="cap-fig">
+                  <h4>Car</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+            <div class="product-item mix ship">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+              <figure class="cap-bot">
+                <%= image_tag('thumb.jpg', class: 'img-responsive') %>
+                <figcaption class="cap-fig">
+                  <h4>Ship</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </figcaption>
+              </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+       <%= image_tag('placeholder1.jpg', class: 'img-responsive') %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
