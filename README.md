@@ -1,5 +1,5 @@
 # README
 
-\\ FirstApp! //
+FirstApp!
 
 
